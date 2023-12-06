@@ -1,5 +1,5 @@
 {% set name = "replicate" %}
-{% set version = "0.21.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/replicate-{{ version }}.tar.gz
-  sha256: 8299a183c451969af71f363202fc5f394e0e8f6e4fa151cc626b16e649f3f352
+  sha256: 4d54b5838c1552a6f76cc37c3af8d9a7998105382082d672acad31636ad443b5
 
 build:
   noarch: python
@@ -22,10 +22,8 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - httpx >=0.21.0,<1
-    - packaging
     - pydantic >1
-    - typing-extensions >=4.5.0
+    - requests >2
 
 test:
   imports:
