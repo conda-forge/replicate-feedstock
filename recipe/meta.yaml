@@ -22,8 +22,10 @@ requirements:
     - pip
   run:
     - python >=3.8
+    - packaging
     - pydantic >1
-    - requests >2
+    - typing-extensions >=4.5.0
+    - requests >=2
 
 test:
   imports:
