@@ -1,5 +1,5 @@
 {% set name = "replicate" %}
-{% set version = "0.34.1" %}
+{% set version = "0.34.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/replicate-{{ version }}.tar.gz
-  sha256: 57cf80c7f4d7f6ae503b1bef400f57c26d494724002d7e9a8750d01394dcfc76
+  sha256: e5fd7edaa6ff6be5c4b189b7c65874fa9bc968c6fb19a59d38cbeb6b4c5e10ee
 
 build:
   noarch: python
